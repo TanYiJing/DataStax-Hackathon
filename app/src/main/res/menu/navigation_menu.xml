@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:id="@+id/nav_account"
+    android:icon="@drawable/ic_person_black_24dp"
+    android:title="My Account"/>
+    <item android:id="@+id/nav_myOrder"
+        android:icon="@drawable/order"
+        android:title="My Order"/>
+    <item android:id="@+id/nav_myCart"
+        android:icon="@drawable/ic_shopping_cart_grey_24dp"
+        android:title="My Cart"/>
+    <item android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="Log out"/>
+
+
+</menu>

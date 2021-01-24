@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.give">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MyAccount" android:label="My Account" android:parentActivityName=".Home"></activity>
+        <activity
+            android:name=".MyOrderList"
+            android:label="Order Details"
+            android:parentActivityName=".MyOrderList" />
+        <activity
+            android:name=".MyOrder"
+            android:label="My Order"
+            android:parentActivityName=".MyOrder" />
+        <activity
+            android:name=".MyCart"
+            android:label="My Cart"
+            android:parentActivityName=".MyCart" />
+        <activity
+            android:name=".ProductDetail"
+            android:label="Product Detail"
+            android:parentActivityName=".ProductDetail" />
+        <activity
+            android:name=".ProductScreen"
+            android:parentActivityName=".ProductScreen" />
+        <activity
+            android:name=".HypermarketScreen"
+            android:label="Hypermarket"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home" />
+        <activity android:name=".staff.Staff" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

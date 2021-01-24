@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyAccount">
+
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/ic_person_black_24dp"
+        />
+
+    <TextView
+        android:id="@+id/myAccountname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_pic"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/myAccountPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myAccountname"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Password"
+        android:textSize="18dp"
+
+        />
+
+    <TextView
+        android:id="@+id/myAccountEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myAccountPassword"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textSize="18dp"
+
+        />
+
+    <EditText
+        android:id="@+id/myaccounteditPass"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myaccounteditName"
+        android:layout_toRightOf="@+id/myAccountPassword"
+        android:ems="10"
+        android:inputType="textPassword"
+
+        />
+
+    <EditText
+        android:id="@+id/myaccounteditName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/myAccountname"
+    android:layout_below="@+id/profile_pic"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+
+    />
+
+    <EditText
+        android:id="@+id/myaccounteditEmail"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myaccounteditPass"
+        android:layout_toRightOf="@+id/myAccountname"
+        android:layout_marginLeft="30dp"
+
+
+
+    />
+
+    <ImageView
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/myaccounteditName"
+        android:layout_toRightOf="@+id/myaccounteditName"
+        app:srcCompat="@drawable/ic_edit_black_24dp"
+        android:layout_below="@+id/profile_pic"
+android:layout_marginTop="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/editPass"
+        android:layout_marginTop="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/myaccounteditPass"
+        android:layout_toRightOf="@+id/myaccounteditPass"
+        app:srcCompat="@drawable/ic_edit_black_24dp"         android:layout_below="@+id/editName"
+        />
+
+    <ImageView
+        android:id="@+id/editEmail"
+        android:layout_marginTop="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/myaccounteditEmail"
+        android:layout_toRightOf="@+id/myaccounteditEmail"
+        app:srcCompat="@drawable/ic_edit_black_24dp"
+        android:layout_below="@+id/editPass"/>
+
+
+</RelativeLayout>

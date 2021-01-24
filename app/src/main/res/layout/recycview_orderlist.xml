@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/orderlistImage"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_remove_black_24dp"
+                />
+
+            <TextView
+                android:id="@+id/orderlistID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/orderlistImage"
+                android:text="ID : 1000" />
+
+            <TextView
+                android:id="@+id/orderlistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/orderlistID"
+                android:layout_toRightOf="@id/orderlistImage"
+                android:fontFamily="@font/roboto_black"
+                android:text="name"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/ordelistPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="6dp"
+                android:layout_toLeftOf="@+id/ordelistqty"
+                android:text="RM10 *"
+
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/ordelistqty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="6dp"
+                android:layout_toLeftOf="@id/ordelistsubtotal"
+                android:text="2 qty ="
+
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/ordelistsubtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="RM20"
+                android:textColor="@color/price"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

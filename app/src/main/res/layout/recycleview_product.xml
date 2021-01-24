@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="240dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="1dp"
+    android:id="@+id/productRecycleView"
+    android:layout_marginBottom="5dp"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+        <ImageView
+            android:id="@+id/product_imgUrl"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bestdeals"
+            />
+
+        <TextView
+            android:id="@+id/discount_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/discountbox"
+            android:fontFamily="@font/roboto_black"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+
+            android:text="20% off"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp"
+            />
+
+        <TextView
+            android:id="@+id/product_oriPrice"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dash"
+            android:text="RM123"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/product_discPrice"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RM12"
+            android:textColor="@color/price"
+            android:fontFamily="@font/roboto_black"
+
+            />
+        <TextView
+            android:id="@+id/product_name"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"/>
+
+        <TextView
+            android:id="@+id/product_desc"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="desc"/>
+
+        <TextView
+            android:id="@+id/product_expDate"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/product_id"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:visibility="gone" />
+
+        <!--<LinearLayout
+            android:id="@+id/addToCart"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:paddingLeft="5dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_shopping_cart_black_24dp"
+                />
+            <TextView
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Add to cart"
+                android:gravity="center_vertical"
+                />
+
+
+        </LinearLayout>-->
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

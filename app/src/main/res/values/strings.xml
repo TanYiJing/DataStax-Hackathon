@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Give</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">SIGN UP</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">confirm</string>
+    <string name="title_activity_home">Home</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="supermarkets">Supermarkets</string>
+    <string name="storeName">Store name</string>
+    <string name="hypermartket_image">hypermartket image</string>
+    <string name="hypermarket_id">hypermarket id</string>
+    <string name="dairyAndEgg"><![CDATA[Dairy & Egg]]></string>
+    <string name="dryAndCanned"><![CDATA[Dry & Canned]]></string>
+    <string name="bestDeals">Best deals</string>
+    <string name="bestDealDesc">Best Deal, all your favorites items</string>
+    <string name="seeAll">See all</string>
+    <string name="description">Description :</string>
+    <string name="stock">Stock :</string>
+    <string name="expdate">Exipired date :</string>
+    <string name="addtpcart">Add to cart</string>
+    <string name="quantity">Quantity</string>
+    <string name="checkout">Check Out</string>
+
+</resources>
